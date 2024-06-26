@@ -5,4 +5,32 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightblue;
+}
 
+/* Regole Container */
+.container{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+/* Regole UL */
+ul{
+    background-color: lightgoldenrodyellow;
+    width: 400px;
+    margin: 20px auto;
+    list-style-type: none;
+    /* Debug */
+    min-height: 200px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightblue;
+    margin: 0 10px;
+    padding: 5px 0;
+}
