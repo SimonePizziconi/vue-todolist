@@ -21,8 +21,8 @@
             </h1>
         </div>
         <div>
-            <input type="text">
-            <button>Inserisci</button>
+            <input v-model="newText" type="text" placeholder="Inserisci Task">
+            <button @click="addItem">Inserisci</button>
         </div>
         <ul>
             <li v-for="(item, index) in todo" :key="index">
