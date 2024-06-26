@@ -27,5 +27,9 @@ createApp({
       
     }
   },
-  
+  methods: {
+    removeItem(i){
+      this.todo.splice(i, 1);
+    }
+  }
 }).mount('#app');

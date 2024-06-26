@@ -25,9 +25,9 @@
             <button>Inserisci</button>
         </div>
         <ul>
-            <li :class="{bar: item.done}" v-for="item in todo" :key="item">
-                {{item.text}}
-                <i class="fa-solid fa-xmark"></i>
+            <li v-for="(item, index) in todo" :key="index">
+                <span :class="{bar: item.done}">{{item.text}}</span>
+                <i @click="removeItem(index)" class="fa-solid fa-xmark"></i>
             </li>
         </ul>
 
