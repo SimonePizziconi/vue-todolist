@@ -25,8 +25,8 @@
             <button>Inserisci</button>
         </div>
         <ul>
-            <li>
-                sdsdsds
+            <li :class="{bar: item.done}" v-for="item in todo" :key="item">
+                {{item.text}}
                 <i class="fa-solid fa-xmark"></i>
             </li>
         </ul>
